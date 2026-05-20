@@ -1,0 +1,68 @@
+# Unreal Engine build outputs
+Binaries/
+Build/
+Content/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# VS / Rider / IDE
+.vs/
+.idea/
+*.sln
+*.suo
+*.user
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.vcxproj
+*.vcxproj.*
+*.xcodeproj
+*.xcworkspace
+
+# Compiled outputs (covers any leftover stragglers)
+*.pdb
+*.exp
+*.ipdb
+*.iobj
+*.app
+
+# All plugin build outputs (rebuild after clone via "Generate Visual Studio project files")
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+Plugins/*/Build/
+Plugins/*/DerivedDataCache/
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+Plugins/**/Build/
+Plugins/**/DerivedDataCache/
+
+# Gaussian Splatting data assets (large, kept out of git)
+*.uasset
+*.umap
+*.upk
+Content/splat_*.uasset
+Content/xili_*.uasset
+Content/*.ply
+Content/*.splat
+Content/*.sog
+**/*.ply
+**/*.splat
+**/*.sog
+
+# Packaged/mobile artifacts
+*.apk
+
+# Plugin content assets
+Plugins/**/Content/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# Local user config
+Config/LocalConfig.ini
