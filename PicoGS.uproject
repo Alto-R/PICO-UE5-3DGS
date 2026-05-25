@@ -30,18 +30,11 @@
 				"Win64",
 				"Linux",
 				"Android"
-			]
+			],
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/2debc028cd90414f97f308c74a3d6a32"
 		},
 		{
 			"Name": "OpenXR",
-			"Enabled": true
-		},
-		{
-			"Name": "OnlineSubsystemPICO",
-			"Enabled": true
-		},
-		{
-			"Name": "VRExpansionPlugin",
 			"Enabled": true,
 			"SupportedTargetPlatforms": [
 				"Win64",
@@ -50,8 +43,28 @@
 			]
 		},
 		{
+			"Name": "OnlineSubsystemPICO",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/6b674b5eed7343eda5d3f2ab8030b50f"
+		},
+		{
+			"Name": "VRExpansionPlugin",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Linux",
+				"Android",
+				"Mac",
+				"IOS"
+			]
+		},
+		{
 			"Name": "XV3dGS",
-			"Enabled": true
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/d186799254dc405f9bde7a2a81b34733",
+			"SupportedTargetPlatforms": [
+				"Win64"
+			]
 		},
 		{
 			"Name": "OpenXRExpansionPlugin",

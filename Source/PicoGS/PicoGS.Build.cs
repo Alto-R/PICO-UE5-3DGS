@@ -10,7 +10,7 @@ public class PicoGS : ModuleRules
 
         //PublicDependencyModuleNames.AddRange(new string[] { "D:/Unreal Engine/UE5.3.2/Project/PICO_VR_Project/Blank_Log_Test/Player" });
 
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "HTTP"});
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "HTTP", "HeadMountedDisplay", "VRExpansionPlugin" });
 
         if (Target.Type == TargetType.Editor)
         		{
