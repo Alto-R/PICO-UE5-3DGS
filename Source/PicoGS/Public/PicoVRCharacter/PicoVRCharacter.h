@@ -12,6 +12,7 @@
 class UInputAction;
 class UInputMappingContext;
 class UInputComponent;
+class UEyeGazeLoggerComponent;
 
 UCLASS()
 class PICOGS_API APicoVRCharacter : public AVRCharacter
@@ -51,6 +52,9 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "VR Locomotion|Input")
 	TObjectPtr<UInputMappingContext> IMC_VR = nullptr;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "EyeGaze")
+	TObjectPtr<UEyeGazeLoggerComponent> EyeGazeLogger = nullptr;
 
 protected:
 	virtual void BeginPlay() override;

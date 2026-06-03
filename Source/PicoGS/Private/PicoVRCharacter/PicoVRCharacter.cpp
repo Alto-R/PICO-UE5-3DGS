@@ -2,6 +2,7 @@
 
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "EyeGaze/EyeGazeLoggerComponent.h"
 #include "InputAction.h"
 #include "InputMappingContext.h"
 #include "Engine/LocalPlayer.h"
@@ -20,6 +21,8 @@ APicoVRCharacter::APicoVRCharacter(const FObjectInitializer& ObjectInitializer)
 		Movement->bOrientRotationToMovement = false;
 		Movement->bUseControllerDesiredRotation = false;
 	}
+
+	EyeGazeLogger = CreateDefaultSubobject<UEyeGazeLoggerComponent>(TEXT("EyeGazeLogger"));
 }
 
 void APicoVRCharacter::BeginPlay()
