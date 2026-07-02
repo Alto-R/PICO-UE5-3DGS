@@ -1,7 +1,6 @@
 # Unreal Engine build outputs
 Binaries/
 Build/
-Content/
 DerivedDataCache/
 Intermediate/
 Saved/
@@ -51,6 +50,16 @@ Content/*.sog
 **/*.splat
 **/*.sog
 
+# Re-include project-specific Content assets (templates + GS splat stay ignored
+# above; the FirstPerson/Fab/Mannequin marketplace content is intentionally out)
+!Content/Maps/**
+!Content/PICO/**
+!Content/BP_Code/**
+!Content/assets/**
+!Content/LevelPrototyping/**
+!Content/Game/**
+!Content/CesiumSettings/**
+
 # Packaged/mobile artifacts
 *.apk
 
@@ -73,3 +82,7 @@ __pycache__/
 
 # Gaze visualization: large interactive HTML is regenerable via visualize_gaze.py
 visualization/*.html
+
+# BStreaming SDK binaries — PICO proprietary, download from the enterprise
+# portal and drop into lib/Win64 (not redistributed here)
+Source/ThirdParty/BStreamingSDK/lib/
