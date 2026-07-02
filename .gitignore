@@ -66,3 +66,10 @@ desktop.ini
 
 # Local user config
 Config/LocalConfig.ini
+
+# Python
+__pycache__/
+*.pyc
+
+# Gaze visualization: large interactive HTML is regenerable via visualize_gaze.py
+visualization/*.html

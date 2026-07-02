@@ -10,7 +10,15 @@ public class PicoGS : ModuleRules
 
         //PublicDependencyModuleNames.AddRange(new string[] { "D:/Unreal Engine/UE5.3.2/Project/PICO_VR_Project/Blank_Log_Test/Player" });
 
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "HTTP", "HeadMountedDisplay", "VRExpansionPlugin", "PICOOpenXRMovement", "PICOOpenXRLoader", "EyeTracker" });
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "HTTP", "HeadMountedDisplay", "VRExpansionPlugin", "EyeTracker" });
+
+        // PC-side Business Streaming SDK (eye tracking over the streaming link).
+        // Win64-only: the GS renderer (XV3dGS) is Win64-only anyway, so the app
+        // always runs on PC and streams to the headset.
+        if (Target.Platform == UnrealTargetPlatform.Win64)
+        {
+            PublicDependencyModuleNames.Add("BStreamingSDK");
+        }
 
         if (Target.Type == TargetType.Editor)
         		{

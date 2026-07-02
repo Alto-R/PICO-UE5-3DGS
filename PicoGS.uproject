@@ -25,7 +25,7 @@
 		},
 		{
 			"Name": "PICOOpenXR",
-			"Enabled": true,
+			"Enabled": false,
 			"SupportedTargetPlatforms": [
 				"Win64",
 				"Linux",
@@ -93,6 +93,10 @@
 				"Linux",
 				"Android"
 			]
+		},
+		{
+			"Name": "FullBodyIK",
+			"Enabled": false
 		}
 	]
 }
